@@ -1,0 +1,13 @@
+.notification-bell-btn { position:relative; cursor:pointer; padding:9px 12px; border-radius:12px; border:1px solid rgba(128,128,128,.25); background:var(--card-bg, transparent); color:inherit; font-size:18px; }
+.notification-badge { position:absolute; top:-7px; right:-7px; background:#dc3545; color:white; border-radius:999px; min-width:19px; height:19px; font-size:11px; display:grid; place-items:center; padding:0 4px; }
+.notification-dropdown { position:absolute; z-index:1000; right:0; top:calc(100% + 12px); width:min(350px, 88vw); background:var(--card-bg, #fff); color:var(--text-color, #222); border:1px solid rgba(128,128,128,.25); box-shadow:0 12px 35px rgba(0,0,0,.2); border-radius:14px; overflow:hidden; }
+.notification-header { display:flex; justify-content:space-between; align-items:center; padding:14px; gap:8px; }
+.notification-header button { font-size:12px; cursor:pointer; }
+.notification-status { padding:0 14px 10px; font-size:12px; opacity:.75; }
+.notification-list { max-height:340px; overflow-y:auto; }
+.notification-item { display:flex; flex-direction:column; width:100%; gap:6px; text-align:left; padding:12px 14px; border:0; border-top:1px solid rgba(128,128,128,.18); color:inherit; background:transparent; cursor:pointer; white-space:normal; }
+.notification-item.is-unread { border-left:4px solid #16a085; font-weight:600; }
+.notification-item.is-read { opacity:.7; }
+.notification-item small { font-size:11px; font-weight:400; opacity:.7; }
+.notification-empty { padding:14px; }
+@media(max-width:600px) { .notification-dropdown { right:-65px; } }
